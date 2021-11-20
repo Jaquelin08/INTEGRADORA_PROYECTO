@@ -1,0 +1,49 @@
+
+Body{
+    Background: beige;
+}
+
+.form{
+    Align-self: center;
+    Display: flex;
+    Flex-direction: column;
+    Flex-wrap: wrap;
+    Align-content: space-around;
+}
+
+Input{
+    
+    Padding: 12px 20px;
+    Margin: 8px 0;
+    Box-sizing: border-box;
+}
+
+Fieldset{
+    Background: rgb(255, 255, 255);
+}
+
+.profile{
+    Background: brown;
+    Color: white;
+    Font-size: 20px;
+    Align-self: center;
+    Border-radius: 10%;
+}
+
+.refresh{
+ Padding: 8px;
+    Font-size: 15px;
+   Background: yellowgreen;
+   Color: black;
+   Cursor: pointer;
+}
+
+.delete{
+ Padding: 8px;
+    Font-size: 15px;
+ 
+    Background: red;
+    Color: white;
+    Cursor: pointer;
+}
+

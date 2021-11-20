@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ADMINISTRADORES </title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+	<body style="background-image:url('../img/i4.jpg');">
+		
+		<ul class="menu">
+			<li><a href="../inicio.html">Inicio</a></li>
+			<li><a href="../admin_g/home.html">Perfil</a></li>
+			<li><a href="../luis archivo2/consultaprestamo.html">Consulta de prestamos</a></li>
+			<li><a href="../luis archivo2/retrasoentrega.html">Consulta de retrasos</a></li>
+			
+		</ul>
+		<h1 align="center"><FONT face="aAharoni"></font></h1>
+       <table    cellpadding="15" cellspacing="10" > <tr>          
+    <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        <td></td>
+                           
+       
+       </table> 
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script></div>
+    <div class="jquery-script-clear"></div>
+    </div>
+    </div>
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <table cellspacing="5" class="table table-bordered table-striped" id="myTable"></table>
+                </div>
+                
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="  crossorigin="anonymous"></script>
+        <script src="jquery.dynamicTable-1.0.0.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#myTable").dynamicTable({
+                    columns: [
+                        {
+                            text: "NOMBRE COMPLETO",
+                            key: "nombre"
+                        },
+                        {
+                            text: "EDAD",
+                            key: "edad"
+                        },
+                       
+                        {
+                            text: "OBSERVACIONES",
+                            key: "obs"
+                        },
+                    ],
+                    data: [{
+                            nombre: 'Manuel Martinez Velazquez',
+                            edad: 23,
+                            genero: 'M',
+                            obs: 'Llega tarde'
+                        },
+                        {
+                            nombre: 'Jose Cañas Barrera',
+                            edad: 24,
+                            genero: 'M',
+                           
+                            obs: 'puntual'
+                        },
+                         {
+                            nombre: 'Alejandra Angeles Morales',
+                            edad: 34,
+                            genero: 'F',
+                    
+                            obs: 'preciso'
+                        },
+                         {
+                            nombre: 'Francisco Gonzales Zuñiga',
+                            edad: 56,
+                            genero: 'M',
+                            
+                            obs: 'ausente'
+                        },
+                    ],
+                    getControl: function (columnKey) {
+                        if (columnKey == "edad") {
+                           return '<select class="form-control"><option value="M">18</option>\n\
+                                                                <option value="F">19</option>\n\
+                                                                <option value="F">20</option>\n\
+                                                                <option value="F">21</option>\n\
+                                                                <option value="F">22</option>\n\
+                                                                <option value="F">23</option>\n\
+                                                                <option value="F">24</option>\n\
+                                                                <option value="F">25</option>\n\
+                                                                <option value="F">26</option>\n\
+                                                                <option value="F">27</option>\n\
+                                                                <option value="F">28</option>\n\
+                                                                <option value="F">29</option>\n\
+                                                                <option value="F">30</option>\n\
+                                                                <option value="F">31</option>\n\
+                                                                <option value="F">32</option>\n\
+                                                                <option value="F">33</option>\n\
+                                                                <option value="F">34</option>\n\
+                                                                <option value="F">35</option>\n\
+                                                                <option value="F">36</option>\n\
+                                                                <option value="F">37</option>\n\
+                                                                <option value="F">38</option>\n\
+                                                                <option value="F">39</option>\n\
+                                                                <option value="F">40</option>\n\
+                                                                <option value="F">41</option>\n\
+                                                                <option value="F">42</option>\n\
+                                                                <option value="F">43</option>\n\
+                                                                <option value="F">44</option>\n\
+                                                                <option value="F">45</option>\n\
+                                                                <option value="F">46</option>\n\
+                                                                <option value="F">47</option>\n\
+                                                                <option value="F">48</option>\n\
+                                                                <option value="F">49</option>\n\
+                                                                <option value="F">50</option>\n\
+                                                                <option value="F">51</option>\n\
+                                                                <option value="F">52</option>\n\
+                                                                <option value="F">53</option>\n\
+                                                                <option value="F">54</option>\n\
+                                                                <option value="F">55</option>\n\
+                                                                <option value="F">56</option>\n\
+                                                                <option value="F">57</option>\n\
+                                                                <option value="F">58</option>\n\
+                                                                <option value="F">59</option>\n\
+                                                                <option value="F">60</option>\n\
+                                                                <option value="F">61</option>\n\
+                                                                <option value="F">62</option>\n\
+                                                                <option value="F">63</option>\n\
+                                                                <option value="F">64</option>\n\
+                                                                <option value="F">65</option>\n\
+                                                                <option value="F">66</option>\n\
+                                                                <option value="F">67</option>\n\
+                                                                <option value="F">68</option>\n\
+                                                                <option value="F">69</option>\n\
+                                                                <option value="F">70</option>\n\
+                                                                <option value="F">71</option>\n\
+                                                                <option value="F">72</option>\n\
+                                                                <option value="F">73</option>\n\
+                                                                <option value="F">74</option>\n\
+                                                                <option value="F">75</option>\n\
+                                                                <option value="F">76</option>\n\
+                                                                <option value="F">77</option>\n\
+                                                                <option value="F">78</option>\n\
+                                                                <option value="F">79</option>\n\
+                                                                <option value="F">80</option>\n\
+                                                                <option value="F">81</option>\n\
+                                                                <option value="F">82</option>\n\
+                                                                <option value="F">83</option>\n\
+                                                                <option value="F">84</option>\n\
+                                                                <option value="F">85</option>\n\
+                                                                <option value="F">85</option>\n\
+                                                                <option value="F">85</option>\n\
+                                             </select>';
+                        
+                        }
+    
+                        if (columnKey == "genero") {
+                            return '<select class="form-control"><option value="M">Masculino</option><option value="F">Femenino</option></select>';
+                        }
+    
+                        return '<input type="text" class="form-control" />';
+                    },
+                });
+    
+                $('#btnGetData').click(function () {
+                    var data = $("#myTable").getTableData();
+                    console.log(data);
+                });
+            });
+        </script>
+        <script type="text/javascript">
+    
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    
+    </script>
+    
+    </body>
+    </html>
+            </ul>
+        </body>
+    </html>
+    

@@ -1,0 +1,208 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Retrasos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.scss">
+   
+    </head>
+    <header>
+        <nav id="nav" class="nav1" style="background-color:rgb(179, 42, 42);">
+            <div class="contenedor-nav" style="background-color:brown">
+                <div class="logo">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+                <div class="enlaces" id="enlaces">
+                    <a href="#" id="enlace-inicio" class="btn-header" > Inicio</a>
+                    <a href="#" id="enlace-equipo" class="btn-header">Contenido</a>
+                    <a href="#" id="enlace-servicio" class="btn-header">Servicios</a>
+                    <a href="#" id="enlace-trabajo" class="btn-header">Catalogo de bibliotecas</a>
+                    <a href="#" id="enlace-contacto" class="btn-header">Contacto</a>
+                </div>
+                <div class="icono" id="open">
+                </div>
+            </div>
+        </nav>
+    </header>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+        <div class="container">
+        <h1>Reporte de retraso de entregas.</h1>
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <table cellspacing="5" class="table table-bordered table-striped" id="myTable"></table>
+                </div>
+                
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="  crossorigin="anonymous"></script>
+        <script src="jquery.dynamicTable-1.0.0.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#myTable").dynamicTable({
+                    columns: [
+                        {
+                            text: "NOMBRE COMPLETO",
+                            key: "nombre"
+                        },
+                        {
+                            text: "EDAD",
+                            key: "edad"
+                        },
+                        {
+                            text: "GENERO",
+                            key: "genero"
+                        },
+                        {
+                            text: "LIBRO RENTADO",
+                            key: "servicio"
+                        },
+                        {
+                            text: "COMENTARIOS DE CITA",
+                            key: "come"
+                        },
+                    ],
+                    data: [{
+                            nombre: 'Carlos Hernandez Martinez',
+                            edad: 23,
+                            genero: 'M',
+                            servicio: 'El diario de Ana Frank',
+                            come: 'No se presento'
+                        },
+                        {
+                            nombre: 'Javier Cristobal Martinez',
+                            edad: 24,
+                            genero: 'M',
+                            servicio: 'Las Batallas del desierto',
+                            come: 'Tiempo de espera terminado'
+                        },
+                         {
+                            nombre: 'Alejandra Vega Hernandez',
+                            edad: 34,
+                            genero: 'F',
+                            servicio: 'Coraline',
+                            come: 'Tiempo de espera terminado'
+                        },
+                         {
+                            nombre: 'Damian Sanchez Real',
+                            edad: 56,
+                            genero: 'M',
+                            servicio: 'La divina comedia',
+                            come: 'Tiempo de espera terminado'
+                        },
+                    ],
+                    getControl: function (columnKey) {
+                        if (columnKey == "edad") {
+                           return '<select class="form-control"><option value="M">18</option>\n\
+                                                                <option value="F">19</option>\n\
+                                                                <option value="F">20</option>\n\
+                                                                <option value="F">21</option>\n\
+                                                                <option value="F">22</option>\n\
+                                                                <option value="F">23</option>\n\
+                                                                <option value="F">24</option>\n\
+                                                                <option value="F">25</option>\n\
+                                                                <option value="F">26</option>\n\
+                                                                <option value="F">27</option>\n\
+                                                                <option value="F">28</option>\n\
+                                                                <option value="F">29</option>\n\
+                                                                <option value="F">30</option>\n\
+                                                                <option value="F">31</option>\n\
+                                                                <option value="F">32</option>\n\
+                                                                <option value="F">33</option>\n\
+                                                                <option value="F">34</option>\n\
+                                                                <option value="F">35</option>\n\
+                                                                <option value="F">36</option>\n\
+                                                                <option value="F">37</option>\n\
+                                                                <option value="F">38</option>\n\
+                                                                <option value="F">39</option>\n\
+                                                                <option value="F">40</option>\n\
+                                                                <option value="F">41</option>\n\
+                                                                <option value="F">42</option>\n\
+                                                                <option value="F">43</option>\n\
+                                                                <option value="F">44</option>\n\
+                                                                <option value="F">45</option>\n\
+                                                                <option value="F">46</option>\n\
+                                                                <option value="F">47</option>\n\
+                                                                <option value="F">48</option>\n\
+                                                                <option value="F">49</option>\n\
+                                                                <option value="F">50</option>\n\
+                                                                <option value="F">51</option>\n\
+                                                                <option value="F">52</option>\n\
+                                                                <option value="F">53</option>\n\
+                                                                <option value="F">54</option>\n\
+                                                                <option value="F">55</option>\n\
+                                                                <option value="F">56</option>\n\
+                                                                <option value="F">57</option>\n\
+                                                                <option value="F">58</option>\n\
+                                                                <option value="F">59</option>\n\
+                                                                <option value="F">60</option>\n\
+                                                                <option value="F">61</option>\n\
+                                                                <option value="F">62</option>\n\
+                                                                <option value="F">63</option>\n\
+                                                                <option value="F">64</option>\n\
+                                                                <option value="F">65</option>\n\
+                                                                <option value="F">66</option>\n\
+                                                                <option value="F">67</option>\n\
+                                                                <option value="F">68</option>\n\
+                                                                <option value="F">69</option>\n\
+                                                                <option value="F">70</option>\n\
+                                                                <option value="F">71</option>\n\
+                                                                <option value="F">72</option>\n\
+                                                                <option value="F">73</option>\n\
+                                                                <option value="F">74</option>\n\
+                                                                <option value="F">75</option>\n\
+                                                                <option value="F">76</option>\n\
+                                                                <option value="F">77</option>\n\
+                                                                <option value="F">78</option>\n\
+                                                                <option value="F">79</option>\n\
+                                                                <option value="F">80</option>\n\
+                                                                <option value="F">81</option>\n\
+                                                                <option value="F">82</option>\n\
+                                                                <option value="F">83</option>\n\
+                                                                <option value="F">84</option>\n\
+                                                                <option value="F">85</option>\n\
+                                                                <option value="F">85</option>\n\
+                                                                <option value="F">85</option>\n\
+                                             </select>';
+                        
+                        }
+
+                        if (columnKey == "genero") {
+                            return '<select class="form-control"><option value="M">Masculino</option><option value="F">Femenino</option></select>';
+                        }
+
+                        return '<input type="text" class="form-control" />';
+                    },
+                });
+
+                $('#btnGetData').click(function () {
+                    var data = $("#myTable").getTableData();
+                    console.log(data);
+                });
+            });
+        </script>
+        <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+    </body>
+</html>

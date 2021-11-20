@@ -1,0 +1,114 @@
+<html>
+<head>
+        <title>CITAS</title>
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+        <style>
+     
+        </style>
+    </head>
+    <body background="horario/5026563.jpg">
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><div>
+<div class="jquery-script-clear"></div>
+</div>
+        <div class="container">
+        <h1>CITAS</h1>
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <table cellspacing="5" class="table table-bordered table-striped" id="myTable"></table>
+                    </div>
+                         
+                
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="  crossorigin="anonymous"></script>
+        <script src="jquery.dynamicTable-1.0.0.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#myTable").dynamicTable({
+                    columns: [{
+                            text: "NOMBRE COMPLETO",
+                            key: "nombre"
+                        },
+                        {
+                            text: "EDAD",
+                            key: "edad"
+                        },
+                        {
+                            text: "GENERO",
+                            key: "genero"
+                        },
+                        {
+                            text: "SERVICIO SOLICITADO",
+                            key: "servicio"
+                        },
+                        {
+                            text: "COMENTARIOS DE CITA",
+                            key: "come"
+                        },
+                    ],
+                    data: [{
+                            nombre: 'Juana Irene Osorio',
+                            edad: 30,
+                            genero: 'F',
+                            servicio: 'Limpeza Dental',
+                            come: 'cita inconclusa, paciente presento dolor'
+                        },
+                        {
+                            nombre: 'Damian Sanchez Real',
+                            edad: 24,
+                            genero: 'M',
+                            servicio: 'Brackets',
+                            come: 'cita con exito'
+                        },
+                         {
+                            nombre: 'Sarahi Corredor Osorio',
+                            edad: 18,
+                            genero: 'F',
+                            servicio: 'Servicio semanal',
+                            come: 'Servicio semanal completado'
+                        },
+                        {
+                            nombre: 'Paola Michelle Juncos Moreno',
+                            edad: 20,
+                            genero: 'F',
+                            servicio: 'Limpieza Dental',
+                            come: 'Cita con exito'
+                        },
+                    ],
+                    getControl: function (columnKey) {
+                        if (columnKey == "edad") {
+                            return '<input type="number" class="form-control" />';
+                        }
+
+                        if (columnKey == "genero") {
+                            return '<select class="form-control"><option value="M">Masculino</option><option value="F">Femenino</option></select>';
+                        }
+
+                        return '<input type="text" class="form-control" />';
+                    },
+                });
+
+                $('#btnGetData').click(function () {
+                    var data = $("#myTable").getTableData();
+                    console.log(data);
+                });
+            });
+        </script>
+        <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    </body>
+</html>
